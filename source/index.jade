@@ -12,7 +12,7 @@ html(lang="zh-TW")
             .bg
             header.header
                 .container
-                    .navbar.u-clearfix
+                    .navbar.navbar--collapse.u-clearfix
                         .social-bar.navbar__social-bar
                             a(href="").icon.icon-btn
                                 i.icon-facebook-official
@@ -21,10 +21,35 @@ html(lang="zh-TW")
                             a(href="").icon.icon-btn
                                 i.icon-behance
                         .nav.navbar__nav
-                            a(href="").menu-toggle
+                            a(href="#popup-overlay").menu-toggle
                                 span
                                 span
                                 span
+                            #popup-overlay.popup-menu
+                                .container
+                                    .u-clearfix
+                                        a(href="").popup-menu__close
+                                            span
+                                            span
+                                    ul
+                                        li
+                                            a.popup-menu__item(href="") ABOUT
+                                        li
+                                            a.popup-menu__item(href="") SKILL
+                                        li
+                                            a.popup-menu__item(href="") EXPERIENCE
+                                        li
+                                            a.popup-menu__item(href="") MY WORK
+                                        li
+                                            a.popup-menu__item(href="") CONTACT
             section.main
-                h1 123
+                .hero
+                    .hero__bg
+                    .container
+                        .hero__content
+                            h1.hero__heading HELLO
+                                br
+                                | I'M Zero
+                            a.btn.btn--primary.btn--md Contact
+                                
             footer

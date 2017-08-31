@@ -262,7 +262,6 @@
 
 .navbar
   height: 80px
-  border: 1px solid #fff
 .navbar--collapse
   margin-right: -16px
   margin-left: -16px
@@ -287,6 +286,9 @@
   display: block
   padding: 24px
   padding-top: 26px
+  @media (max-width: 768px)
+    padding: 12px
+    padding-top: 16px
   span
     display: block
     height: 2px
@@ -300,10 +302,10 @@
     &:nth-child(3)
       transform: translateX(20%)
 
-@media (max-width: 768px)
-  .menu-toggle
-    padding: 12px
-    padding-top: 16px
+// @media (max-width: 768px)
+//   .menu-toggle
+//     padding: 12px
+//     padding-top: 16px
 
 /* popup-menu 
 /*---------------------
@@ -356,7 +358,7 @@
   font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif
   font-size: 40px
   font-weight: 900
-  color: #484848
+  color: $black
   line-height: 80px
   transition: all 0.3s
   &:hover
@@ -374,20 +376,20 @@
 .hero
   padding-top: 20vh
   padding-bottom: 20vh
-
-@media (max-width: 480px)
-  .hero
+  display: flex
+  justify-content: center
+  @media (max-width: 480px)
     padding-top: 80px
     padding-bottom: 80px
+
 
 .hero__heading
   font-size: 120px
   font-weight: 900
   color: $white
-
-@media (max-width: 768px)
-  .hero__heading
+  @media (max-width: 768px)
     font-size: 48px
+
 
 .hero__bg
   position: absolute
@@ -398,17 +400,14 @@
   background-size: 400px
   background-repeat: no-repeat
   background-position: top right
-  left: 50%
-  transform: translateX(-50%)
+  // left: 50%
+  // transform: translateX(-50%)
   max-width: 1140px
+  @media (max-width: 768px)
+      background-size: 320px
+  @media (max-width: 480px)
+      background-size: 200px
 
-@media (max-width: 768px)
-  .hero__bg
-    background-size: 320px
-
-@media (max-width: 480px)
-  .hero__bg
-    background-size: 200px
 
 /*-------------------------
 /* $Quote
